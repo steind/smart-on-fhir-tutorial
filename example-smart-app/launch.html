@@ -29,20 +29,11 @@
       <div class="bounce2"></div>
       <div class="bounce3"></div>
     </div>
-    <div>
-      <p><span id="iss"></span></p>
-      <p><span id="launch"></span></p>
-    </div>
     <script>
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      document.getElementById("iss").innerText = urlParams.get('iss');
-      document.getElementById("launch").innerText = urlParams.get('launch');
-      /*
       FHIR.oauth2.authorize({
         'client_id': 'a1ebc169-177f-4e9b-82f7-23ce05371e7d',
         'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
-      }); */
+      });
     </script>
   </body>
 </html>
